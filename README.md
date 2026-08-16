@@ -1,6 +1,8 @@
-# 📄 Smart Resume Analyzer
+<div align="center">
 
-*The Intelligent Career Optimization Engine for Modern Job Seekers*
+# 🚀 Smart Resume Analyzer
+
+*The Ultimate AI-Powered Career Optimization Experience*
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -11,36 +13,43 @@
 ---
 
 ## 🌟 Overview
-**Smart Resume Analyzer** is a cutting-edge, serverless web platform engineered to help job seekers bypass rigid ATS (Applicant Tracking System) filters. By combining high-precision client-side PDF processing with the reliability of Firebase, this app delivers real-time career insights, keyword matching, and skill gap analysis in a clean, minimalist, and highly responsive interface.
+
+**Smart Resume Analyzer** is a next-generation career tool designed with a sleek UI and fluid, professional animations. Built to deliver lightning-fast performance, it offers seamless real-time parsing, intuitive interactions, and a polished user interface to help job seekers stand out in a competitive market.
 
 ---
 
-## ⚡ Core Features
+## ⚡ Key Features
 
-*   **🎯 Precision ATS Optimization:** Advanced algorithm to calculate matching scores between your resume and specific job descriptions.
-*   **🧠 Client-Side Intelligence:** Uses `pdfjs-dist` to extract and process resume data directly in the browser, ensuring maximum privacy.
-*   **✨ Fluid Micro-Interactions:** Delightful user experience powered by **Framer Motion** for smooth, professional transitions.
-*   **🔒 Secure Firebase Auth:** Frictionless Google Sign-In with persistent session management.
+*   **✨ Fluid Micro-Animations:** Delightful transitions powered by **Framer Motion** for a premium feel.
+*   **🎯 Precision ATS Optimization:** Advanced algorithm to calculate matching scores between resumes and job descriptions.
+*   **🧠 Client-Side Intelligence:** Uses `pdfjs-dist` to extract and process resume data instantly in the browser.
+*   **🔒 Secure Firebase Auth:** Frictionless Google Sign-In with robust session management.
 *   **☁️ Cloud-Native Storage:** Seamlessly uploads and archives your resumes to Firebase Storage.
-*   **📊 Historical Insights:** Track your application trends and keyword evolution via real-time Firestore integration.
+*   **📊 Historical Insights:** Track your application trends and keyword evolution in real-time.
 *   **🌓 Adaptive UI/UX:** A distraction-free, pure-white spacious layout optimized for productivity.
-*   **📱 Universal Compatibility:** Fully responsive architecture that functions flawlessly across desktop, tablet, and mobile devices.
+*   **📱 Universal Compatibility:** Fully responsive architecture that functions flawlessly across all devices.
+
+---
+
+## 🎨 Visuals & Animations
+*(Add a GIF of your app's animations here to showcase the Framer Motion effects)*
+<br>
+![App Demo](YOUR_GIF_LINK_HERE)
 
 ---
 
 ## 🛠 Tech Stack
 
-*   **Frontend Architecture:** React (Vite), Tailwind CSS.
-*   **Animation Engine:** Framer Motion (Micro-animations, page transitions).
-*   **Core Logic:** PDF.js (Browser-based text extraction & parsing).
-*   **Backend & Infrastructure:** Firebase Authentication, Cloud Firestore, Cloud Storage, Firebase Hosting.
-*   **Iconography:** Lucide React (Minimalist, modern icons).
+*   **Frontend:** React, Vite, Tailwind CSS, Framer Motion, Lucide Icons.
+*   **State & Storage:** Firebase (Authentication, Cloud Firestore, Cloud Storage).
+*   **Resume Processing:** PDF.js (Client-side parsing).
+*   **Deployment:** Firebase Hosting & GitHub.
 
 ---
 
-## 🚀 Getting Started Locally
+## 💻 Getting Started Locally
 
-To launch this application on your local workstation, execute the following commands:
+To run this project on your local machine, follow these simple steps:
 
 1. **Clone the repository:**
    ```bash
