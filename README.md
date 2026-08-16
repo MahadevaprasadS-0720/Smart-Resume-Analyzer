@@ -2,48 +2,43 @@
 
 # 🚀 Smart Resume Analyzer
 
-*The Ultimate AI-Powered Career Optimization Experience*
+*The Ultimate Modern Career Optimization Experience*
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-000000?style=for-the-badge&logo=framer&logoColor=white)
+![React](https://img.shields.io/badge/REACT-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/VITE-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/TAILWIND_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/FRAMER_MOTION-000000?style=for-the-badge&logo=framer&logoColor=white)
+![Firebase](https://img.shields.io/badge/FIREBASE-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+
+</div>
 
 ---
 
 ## 🌟 Overview
 
-**Smart Resume Analyzer** is a next-generation career tool designed with a sleek UI and fluid, professional animations. Built to deliver lightning-fast performance, it offers seamless real-time parsing, intuitive interactions, and a polished user interface to help job seekers stand out in a competitive market.
+Smart Resume Analyzer is a next-generation, feature-rich career optimization application designed with a sleek UI and fluid animations. Built to deliver lightning-fast performance, it offers seamless real-time parsing, intuitive interactions, and a polished user interface for ATS scoring and resume enhancement.
 
 ---
 
 ## ⚡ Key Features
 
-*   **✨ Fluid Micro-Animations:** Delightful transitions powered by **Framer Motion** for a premium feel.
-*   **🎯 Precision ATS Optimization:** Advanced algorithm to calculate matching scores between resumes and job descriptions.
-*   **🧠 Client-Side Intelligence:** Uses `pdfjs-dist` to extract and process resume data instantly in the browser.
-*   **🔒 Secure Firebase Auth:** Frictionless Google Sign-In with robust session management.
-*   **☁️ Cloud-Native Storage:** Seamlessly uploads and archives your resumes to Firebase Storage.
-*   **📊 Historical Insights:** Track your application trends and keyword evolution in real-time.
-*   **🌓 Adaptive UI/UX:** A distraction-free, pure-white spacious layout optimized for productivity.
-*   **📱 Universal Compatibility:** Fully responsive architecture that functions flawlessly across all devices.
-
----
-
-## 🎨 Visuals & Animations
-*(Add a GIF of your app's animations here to showcase the Framer Motion effects)*
-<br>
-![App Demo](YOUR_GIF_LINK_HERE)
+* **Modern Glassmorphism UI:** Clean, minimalist design with smooth micro-interactions.
+* **Client-Side Parsing:** Fast in-browser text extraction using PDF.js for complete data privacy.
+* **ATS Score & Match Analysis:** Instant visual scoring meter with matched keywords and missing skill breakdown.
+* **Smooth Animations:** Powered by Framer Motion for delightful transitions and interactive feedback.
+* **Secure Google Authentication:** Seamless sign-in and session persistence via Firebase Auth.
+* **Cloud Storage Vault:** Automatic PDF resume uploads and secure archiving via Firebase Storage.
+* **Real-time Scan History:** Instant data persistence and historical scan tracking in Cloud Firestore.
+* **Responsive Layout:** Perfectly optimized for mobile, tablet, and desktop screens.
 
 ---
 
 ## 🛠 Tech Stack
 
-*   **Frontend:** React, Vite, Tailwind CSS, Framer Motion, Lucide Icons.
-*   **State & Storage:** Firebase (Authentication, Cloud Firestore, Cloud Storage).
-*   **Resume Processing:** PDF.js (Client-side parsing).
-*   **Deployment:** Firebase Hosting & GitHub.
+* **Frontend:** React, Vite, Tailwind CSS, Framer Motion, Lucide Icons
+* **State & Storage:** Cloud Firestore & Firebase Storage
+* **Authentication:** Firebase Auth (Google Sign-In)
+* **Deployment:** Firebase Hosting & GitHub
 
 ---
 
@@ -53,4 +48,4 @@ To run this project on your local machine, follow these simple steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/smart-resume-analyzer.git](https://github.com/YOUR_USERNAME/smart-resume-analyzer.git)
+   git clone [https://github.com/MahadavaprasadS-0720/Smart-Resume-Analyzer.git](https://github.com/MahadavaprasadS-0720/Smart-Resume-Analyzer.git)
