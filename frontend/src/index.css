@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   ULTRA-CLEAN PURE-WHITE SAAS WITH AMBIENT LIGHTING
+   Inspired by Apple, Stripe, Linear & Notion
+   ============================================================ */
+
+@layer base {
+  :root {
+    --bg-page: #FAFAFA;
+    --text-primary: #0F172A;
+    --text-secondary: #334155;
+    --text-muted: #64748B;
+    --card-bg: #FFFFFF;
+    --border-color: #E2E8F0;
+    --scroll-progress: 0%;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #FAFAFA;
+    color: #0F172A;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.015em;
+    overflow-x: hidden;
+  }
+}
+
+::selection {
+  background-color: #4F46E5;
+  color: #FFFFFF;
+}
+
+/* ============================================================
+   SCROLL PROGRESS BAR
+   ============================================================ */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3.5px;
+  width: var(--scroll-progress);
+  background: linear-gradient(90deg, #4F46E5 0%, #2563EB 50%, #06B6D4 100%);
+  z-index: 9999;
+  border-radius: 0 9999px 9999px 0;
+  box-shadow: 0 0 12px rgba(79, 70, 229, 0.6), 0 0 4px rgba(6, 182, 212, 0.5);
+  transition: width 0.05s linear;
+}
+
+/* ============================================================
+   PRISTINE CANVAS & AMBIENT SOFT LIGHT GLOWS (ZERO GRIDS)
+   ============================================================ */
+.light-canvas {
+  min-height: 100vh;
+  background-color: #FAFAFA;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating Ambient Light Orbs for depth & lively lighting */
+.ambient-glow-1 {
+  position: fixed;
+  top: -10vh;
+  left: 15vw;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(224, 231, 255, 0.7) 0%, rgba(224, 231, 255, 0) 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+  animation: float-glow-1 14s ease-in-out infinite alternate;
+}
+
+.ambient-glow-2 {
+  position: fixed;
+  top: 25vh;
+  right: 10vw;
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(207, 250, 254, 0.6) 0%, rgba(207, 250, 254, 0) 70%);
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+  animation: float-glow-2 18s ease-in-out infinite alternate;
+}
+
+.ambient-glow-3 {
+  position: fixed;
+  bottom: 10vh;
+  left: 20vw;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(254, 226, 226, 0.45) 0%, rgba(254, 226, 226, 0) 70%);
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+  animation: float-glow-1 16s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes float-glow-1 {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(40px, 30px) scale(1.1); }
+  100% { transform: translate(-30px, -20px) scale(0.95); }
+}
+
+@keyframes float-glow-2 {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(-50px, 40px) scale(1.08); }
+  100% { transform: translate(25px, -35px) scale(0.92); }
+}
+
+/* ============================================================
+   COMPONENTS & CONTAINERS
+   ============================================================ */
+@layer components {
+
+  /* Floating Crystalline White Navbar */
+  .crystalline-nav {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+  }
+
+  /* Crisp Pure White Bento Card */
+  .bento-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 10px 30px -8px rgba(15, 23, 42, 0.07), 0 1px 3px rgba(0, 0, 0, 0.02);
+    border-radius: 1.25rem;
+    transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .bento-card:hover {
+    border-color: #CBD5E1;
+    box-shadow: 0 20px 40px -12px rgba(79, 70, 229, 0.12), 0 0 0 1px rgba(79, 70, 229, 0.15), 0 4px 8px rgba(0, 0, 0, 0.03);
+    transform: translateY(-2px);
+  }
+
+  /* Primary Deep Royal Indigo to Electric Blue CTA with Light Shimmer */
+  .btn-primary-gradient {
+    position: relative;
+    background: linear-gradient(135deg, #4F46E5 0%, #2563EB 50%, #06B6D4 100%);
+    color: #FFFFFF !important;
+    box-shadow: 0 10px 28px -4px rgba(79, 70, 229, 0.45), 0 3px 8px rgba(37, 99, 235, 0.25);
+    transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+    overflow: hidden;
+  }
+
+  .btn-primary-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+    animation: shimmer-light 3s infinite;
+  }
+
+  .btn-primary-gradient:hover {
+    background: linear-gradient(135deg, #4338CA 0%, #1D4ED8 50%, #0891B2 100%);
+    box-shadow: 0 14px 36px -4px rgba(79, 70, 229, 0.6), 0 5px 12px rgba(37, 99, 235, 0.35);
+    transform: scale(1.015) translateY(-2px);
+    color: #FFFFFF !important;
+  }
+
+  .btn-primary-gradient > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@keyframes shimmer-light {
+  0%   { left: -100%; }
+  40%  { left: 100%; }
+  100% { left: 100%; }
+}
+
+/* ============================================================
+   LASER SCANNING BEAM (Clean Electric Blue Light Theme)
+   ============================================================ */
+@keyframes laser-sweep-light {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+.laser-scan-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3.5px;
+  background: linear-gradient(90deg, transparent 0%, #4F46E5 25%, #06B6D4 50%, #4F46E5 75%, transparent 100%);
+  box-shadow: 0 0 16px rgba(79, 70, 229, 0.7), 0 0 24px rgba(6, 182, 212, 0.5);
+  animation: laser-sweep-light 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  z-index: 30;
+  pointer-events: none;
+}
+
+.laser-scan-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(79, 70, 229, 0.06) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 20;
+}
+
+/* ============================================================
+   TYPOGRAPHY GRADIENTS & CONTRAST
+   ============================================================ */
+.hero-gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(135deg, #4F46E5 0%, #2563EB 50%, #06B6D4 100%);
+  display: inline-block;
+}
+
+/* ============================================================
+   CUSTOM LIGHT SCROLLBAR
+   ============================================================ */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #FAFAFA; }
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
